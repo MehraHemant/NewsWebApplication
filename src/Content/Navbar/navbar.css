@@ -1,0 +1,126 @@
+header{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+}
+.blank{
+    display: none;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    /* border-bottom: 22px solid grey; */
+    box-shadow: 1px 1px 5px black;
+}
+
+.siteName {
+    color: rgb(240, 255, 27);
+    margin: auto 15px;
+}
+
+#navbar ul li a {
+    padding: 0px 8.5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-weight: 500;
+}
+
+.navbar {
+    height: 44px;
+    background-color: grey;
+    border: 0px;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+#navbar ul,
+#navbar ul li {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    border: 0px;
+}
+
+.navbar-menu {
+    height: 20px;
+    width: 20px !important;
+    display: none;
+}
+
+
+@media only screen and (max-width: 720px) {
+    #navbar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .siteName {
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .navbarAll {
+        transition: all .5s;
+    }
+
+    #navbar ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+        height: 30px;
+        border-top: 1px solid black;
+    }
+
+    #navbar ul li a {
+        padding: 3px;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-menu {
+        display: block;
+        height: 25px;
+        width: 25px !important;
+        position: absolute;
+        right: 40px;
+        top: 9px;
+        cursor: pointer;
+    }
+    .blank{
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.486);
+    }
+
+}
+
+/* darkMode */
+.darknavbar {
+    height: 44px;
+    background-color: #15191d;
+    border: 0px;
+    border-bottom: 2px solid white;
+}

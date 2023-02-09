@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dark{
+  background-color: black;
+  color: #6f6f6f !important;
+}
+a{
+  text-decoration: none;
+  color: black;
+  background: transparent !important;
+}
+#btnMode{
+  position: fixed;
+  height: 17px;
+  width: 17px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 100;
+  right: 42px;
+  bottom: 15px;
+  transition: all 0.5s;
+}
+.btnContainer{
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid black;
+  height: 19px;
+  width: 46px;
+  border-radius: 9px;
+  background-color: red;
+  transition: background-color .6s;
+  font-size: 11px;
+  text-align: right;
+  font-weight: 700;
+  color: black;
+  padding-right: 4px;
+}
+/* DarkMode */
+.darkbtnContainer{
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid black;
+  height: 19px;
+  width: 46px;
+  border-radius: 9px;
+  background-color: green;
+  transition: background-color .6s;
+  font-size: 10px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  font-weight: 700;
+  color: black;
+  padding-left: 2px;
+}
+#darkbtnMode{
+    position: fixed;
+    height: 17px;
+    width: 17px;
+    background-color: black;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: all 0.5s;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

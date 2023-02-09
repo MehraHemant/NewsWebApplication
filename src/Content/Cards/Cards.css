@@ -1,0 +1,110 @@
+#Card{
+    height: 200px;
+    margin: 10px auto;
+    border: 2px solid black;
+    width: 43vw;
+    display: flex;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 4px 4px 5px rgb(46, 46, 46);
+}
+
+#Card img {
+    height: 196px;
+    background: url('https://goreg.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg') no-repeat center center /cover;
+    border-right: 2px solid black;
+    box-shadow: 1px 0px 3px white;
+    width: 15vw;
+    border-radius: 6px 0px 0px 6px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.card-details {
+    margin: 10px 10px 8px 18px;
+    width: 24vw;    
+}
+
+.card-heading {
+    /* text-shadow: 1px 1px 2px grey; */
+    font-size: 20px;
+    white-space: nowrap;
+    word-spacing: -3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-desc {
+    /* border: 1px solid grey; */
+    margin-top: 4px;
+    word-spacing: -2px;
+    height: 104px;
+    overflow: hidden;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.card-desc:after{content: '...';}
+
+.card-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    background: #262626;
+    color: rgb(163, 163, 163);
+    padding: 2px 6px;
+    letter-spacing: -0.4px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid;
+
+}
+.card-author{
+    margin-top: 18px;
+    font-size: 10px;
+    text-align: left;
+    white-space: wrap;    
+}
+
+/* Media Screen */
+@media only screen and (max-width: 720px) {
+    #Card{
+        width: 90vw;
+    }
+    #darkCard{
+        width: 90vw!important;
+    }
+    img{
+        width: 30vw !important;
+    }
+    .card-details{
+        width: 54vw !important;
+    }
+}
+
+/* DarkMode */
+#darkCard{
+    height: 200px;
+    margin: 10px auto;
+    border: 2px solid #6f6f6f;
+    width: 43vw;
+    display: flex;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px rgb(49, 49, 49);
+    background-color: #101214;
+    color: #6f6f6f;
+}
+
+#darkCard img{
+    height: 196px;
+    background: url('https://goreg.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg') no-repeat center center /cover;
+    border-right: 2px solid #6f6f6f;
+    box-shadow: 1px 0px 3px white;
+    width: 15vw;
+    border-radius: 6px 0px 0px 6px;
+    object-fit: cover;
+    object-position: center;
+}

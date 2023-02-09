@@ -1,0 +1,15 @@
+.cardContainer-flex{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-evenly !important;
+}
+.cardContainer-heading{
+    margin: 54px 30px 10px 30px;
+    background-color: transparent !important;
+    text-align: center;
+
+}
+.loading{
+    display: flex;
+    justify-content: center;
+}
